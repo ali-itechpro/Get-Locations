@@ -21,6 +21,7 @@ async componentDidMount() {
   // data getLocations
   const getLocData= await data.getLocations();
    this.setState({
+     //storing data on state
     dataLocations:getLocData
    })
 
@@ -29,11 +30,10 @@ async componentDidMount() {
   const getIncData= await data.getIncidentsByLocationId("airport/t1");
   //console.log(getIncData);
   this.setState({
+    //storing data on state
   dataIncident: getIncData
 })
 }
-
-
 
   render()
   {
@@ -56,8 +56,9 @@ async componentDidMount() {
   <tbody>
     
     {
-         
+        //checking if state is true and extracting state using map function 
       this.state.dataIncident.length> 0 && this.state.dataIncident.map((data) => {
+        //checking priority condition
         let iconPriPath="";
         switch(data.priority)
         {
