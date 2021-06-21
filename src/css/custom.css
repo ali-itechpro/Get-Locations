@@ -1,0 +1,21 @@
+body{background-color: #303030;}
+.padding-r-l-0 {padding-right: 0px; padding-left:0px;}
+.table {color:#fff; background-color:#212529; border-bottom:1px solid #666; border-top:1px solid #666 }
+.theader{font-weight:bold;border-bottom:0px }
+.table>thead>tr{background-color:#404040;border-bottom:none}
+.table>tbody>tr{background-color:#303030;border-top:1px solid #999}
+.table>tbody>tr:hover{background-color:#202020;color:#fff}
+
+@media screen and (max-width:600px) {
+   .row-title-headings, .incident-id {
+      display: none;
+
+    }
+    .item-list{margin-left:50px;height:35px ;}
+    .f-r-c{position: absolute;margin-left:10px;}
+  }
+
+  @media screen and (min-width:600px) {
+     .f-r-c{text-align:center}
+     .incident-id{text-align: center;}
+   }
